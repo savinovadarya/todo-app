@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*——————————*/
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ff5f6d), to(#ffc371));
+  background: -webkit-linear-gradient(left, #ff5f6d, #ffc371);
+  background: -o-linear-gradient(left, #ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.wrapper {
+  max-width: 400px;
+  margin: 120px auto;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.wrapper header {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 5px 0px 30px 0px;
+}
+
+.wrapper .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.wrapper .input .add {
+  width: 85%;
+  height: 100%;
+  border: 1px solid #c8c9c7;
+  font-size: 17px;
+  border-radius: 3px;
+  padding: 0px 15px;
+  margin: 0px 5px 0px 0px;
+}
+
+.wrapper .input .add:focus {
+  border: 1px solid #afb0ad;
+}
+
+.wrapper .input .add-btn {
+  width: 15%;
+  height: 100%;
+  background-color: #fa7b95;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.wrapper .input .add-btn.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper .input .add-btn:hover {
+  background-color: #f96281;
+}
+
+.wrapper .todolist {
+  margin: 0 0 20px 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.wrapper .todolist li {
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background-color: #f2f2f2;
+  margin: 0px 0px 8px 0px;
+  padding: 0 15px;
+  font-size: 14px;
+  cursor: default;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.wrapper .todolist li:hover {
+  background-color: #f0f0f0;
+}
+
+.wrapper .todolist li span {
+  position: absolute;
+  right: -60px;
+  background-color: #f54029;
+  color: #fff;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: right 0.3s ease;
+  -o-transition: right 0.3s ease;
+  transition: right 0.3s ease;
+}
+
+.wrapper .todolist li span:hover {
+  background-color: #f42a11;
+}
+
+.wrapper .todolist li:hover span {
+  right: 0px;
+}
+
+.wrapper .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .footer .count-tasks {
+  cursor: default;
+  color: #b4b4b4;
+}
+
+.wrapper .footer .remove {
+  background-color: #f54029;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 6px 10px 6px 10px;
+}
+
+.wrapper .footer .remove:hover {
+  background-color: #f42a11;
+}
